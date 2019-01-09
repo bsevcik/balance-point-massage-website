@@ -1,0 +1,26 @@
+body{
+    background-image:url(../images/bamboobackground3.png);
+    height: 2500px;
+    width: 100%;
+}
+
+.slicknav_menu {display: none;}
+header img  {max-width: 100%;height: auto;}
+nav         {text-align: right;padding-top:50px;}
+nav ul      {list-style-type: none;}
+nav ul li   {display: inline-block;margin:0 5px;}
+nav ul li a {color: #CC1C0D; font-size: 120%; text-decoration: none;font-weight: 600;}
+
+@media (max-width: 768px) {
+    .logo   {text-align: center;}
+}
+@media (max-width: 550px) {
+    /* FOR MOBILE MENU
+    nav     {text-align: center;padding-top:0;}
+    select  {width: 100%;}
+    */
+    
+    /* FOR SLICK NAV */
+    nav             {display: none;}
+    .slicknav_menu  {display: block;}
+}
