@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://s.codepen.io/css-tricks/fullpage/irqvo -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  <link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico">
+  <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111">
+  <title>CodePen - Simple jQuery Accordian #2</title>
+  
+  
+    <link rel="stylesheet" href="./normalize.min.css">
+
+  
+      <style>
+      .accordion {
+  margin: 50px;
+}
+.accordion dt, .accordion dd {
+  padding: 10px;
+  border: 1px solid black;
+  border-bottom: 0;
+}
+.accordion dt:last-of-type, .accordion dd:last-of-type {
+  border-bottom: 1px solid black;
+}
+.accordion dt a, .accordion dd a {
+  display: block;
+  color: black;
+  font-weight: bold;
+}
+.accordion dd {
+  border-top: 0;
+  font-size: 12px;
+}
+.accordion dd:last-of-type {
+  border-top: 1px solid white;
+  position: relative;
+  top: -1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font: 16px Sans-Serif;
+}
+
+    </style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no">
+
+  <dl class="accordion">
+
+<dt><a href="https://s.codepen.io/css-tricks/fullpage/irqvo">Panel 1</a></dt>
+<dd class="" style="display: none;">Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</dd>
+
+<dt><a href="https://s.codepen.io/css-tricks/fullpage/irqvo">Panel 2</a></dt>
+<dd class="" style="display: none;">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</dd>
+
+<dt><a href="https://s.codepen.io/css-tricks/fullpage/irqvo">Panel 3</a></dt>
+<dd class="active" style="display: block;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</dd>
+
+</dl>
+    <script src="./stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js.download"></script>
+
+  <script src="./jquery.min.js.download"></script>
+
+  
+
+    <script>
+      (function($) {
+    
+  var allPanels = $('.accordion > dd').hide();
+    
+  $('.accordion > dt > a').click(function() {
+      $this = $(this);
+      $target =  $this.parent().next();
+
+      if(!$target.hasClass('active')){
+         allPanels.removeClass('active').slideUp();
+         $target.addClass('active').slideDown();
+      }
+      
+    return false;
+  });
+
+})(jQuery);
+      //# sourceURL=pen.js
+    </script>
+
+
+
+  
+  
+
+  <script src="./css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js.download"></script>
+
+
+
+ 
+</body></html>
