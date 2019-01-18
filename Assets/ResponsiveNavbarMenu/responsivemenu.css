@@ -7,12 +7,23 @@ body {
 main > * {
     background: silver;
 }
-header, footer {
+header {
     display: grid;
     height: 100px;
     width: 1fr;
     min-width: 960px;
     background: #BFD8D2;
+}
+
+footer {
+    display: grid;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #BFD8D2;
+    height: 100px;
+    text-align: center;
 }
 }
 #maincontainer {
