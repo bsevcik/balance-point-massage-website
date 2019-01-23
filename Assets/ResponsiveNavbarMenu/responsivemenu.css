@@ -8,9 +8,11 @@
 body {
     margin: 0;
 }
+/*
 main > * {
     background: silver;
 }
+*/
 header {
     display: grid;
     height: 100px;
@@ -45,6 +47,51 @@ main {
     margin: 10px auto 10px auto;
 
 }
+
+
+
+/*SS classes are used for the FAQ style menus*/
+#ss_menu { 
+	width: 500px;
+    margin: 10px auto;
+}
+#ss_menu p {
+    font-size: 1em;
+    text-align: center;
+}    
+.ss_button { 
+	background-color: #BFD8D2;
+	border: 1px solid #DF744A;
+    margin-bottom: .5em;
+	cursor: pointer;
+	padding: 10px;
+	color: #8B8B8B;
+    height: 40px;
+    display: flex;
+    
+}
+.ss_button {
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.ss_content {
+	background-color: #FFF;
+	display: none;
+	padding: 10px;
+}
+.ss_content a:active, .ss_content a:visited, .ss_content a:link,#ss_menu > div > h3 > a {
+    color: black;
+    text-decoration: none;
+}
+/*End FAQ style Menus*/
+
+
+
+#footerHeight {
+    height: 100px;
+    width: 1px;
+}
 header {
 /*
     grid-row: 1 / 1;
@@ -57,7 +104,6 @@ header img {
     width: 40%;
     height: 98.891px;
     margin: auto;
-    
 }
 /*
 section:nth-of-type(1) {
@@ -92,6 +138,13 @@ footer li {
     display:inline-block;
     padding: 0 auto 0 auto;
 }
+#contactForm {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
 
 /*Menu Starts Here*/
 #cssmenu {
@@ -473,8 +526,9 @@ footer li {
 }
 @media(max-width: 565px) {
     footer {
-        height: 125px;
+        height: 155px;
         font-size: 150%;
+        min-width: 480px;
     }
     header {
         display: block;
@@ -483,6 +537,11 @@ footer li {
         min-width: 220px;
         margin: 0 auto;
     }
-    
+    #footerHeight {
+        height: 155px;
+    }
+    #ss_menu { 
+	width: 350px;
+    }
 }
 
