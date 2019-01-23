@@ -31,10 +31,12 @@ footer {
     text-align: center;
 }
 #maincontainer {
-    margin: 0 10px 0 10px;
+    max-width: 960px;
+    margin: 0 auto;
 }
 main {
     display: grid;
+    margin: 0px 20px;
 /*
     width: 940px;
 */
@@ -44,10 +46,14 @@ main {
     grid-template-rows: repeat(8, 100px);
     grid-gap: 20px;
 */
-    margin: 10px auto 10px auto;
-
 }
-
+.centered {
+    text-align: center;
+}
+.imgcenter {
+    display: block;
+    margin: 0 auto;
+}
 
 
 /*SS classes are used for the FAQ style menus*/
@@ -57,7 +63,7 @@ main {
 }
 #ss_menu p {
     font-size: 1em;
-    text-align: center;
+    text-align: left;
 }    
 .ss_button { 
 	background-color: #BFD8D2;
@@ -78,7 +84,7 @@ main {
 .ss_content {
 	background-color: #FFF;
 	display: none;
-	padding: 10px;
+    padding: 10px;
 }
 .ss_content a:active, .ss_content a:visited, .ss_content a:link,#ss_menu > div > h3 > a {
     color: black;
@@ -88,7 +94,7 @@ main {
 
 
 
-#footerHeight {
+.footerHeight {
     height: 100px;
     width: 1px;
 }
@@ -528,7 +534,7 @@ footer li {
     footer {
         height: 155px;
         font-size: 150%;
-        min-width: 480px;
+        min-width: 454px;
     }
     header {
         display: block;
@@ -537,11 +543,13 @@ footer li {
         min-width: 220px;
         margin: 0 auto;
     }
-    #footerHeight {
+    div.footerHeight, .footerHeight {
+        width: 1px;
         height: 155px;
     }
     #ss_menu { 
 	width: 350px;
     }
+
 }
 
