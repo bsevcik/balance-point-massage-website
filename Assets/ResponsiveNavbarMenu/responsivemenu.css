@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
 
 /*Decided to remove company history link*/
-#cssmenu > ul > li > ul > li:nth-child(1) > a {
+#cssmenu > ul > li:nth-child(2) > ul > li:nth-child(1) > a {
     display: none;
 }
 /*Grid Layout Starts here*/
@@ -334,6 +334,7 @@ footer li {
 }
 @media all and (max-width: 805px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
     #cssmenu > ul {
+        display: block;
         max-height: 0;
         overflow: hidden;
         -webkit-transition: max-height 0.35s ease-out;
@@ -461,8 +462,27 @@ footer li {
         min-width: 0;
         width: 100%;
     }
-    footer > h3, footer ul {
-        text-align: center;
+    footer {
+        display: block;
     }
+    footer > h3, footer ul {
+        min-width: 0;
+        text-align: center;
+        margin: 0 10px 0 10px;
+    }
+}
+@media(max-width: 565px) {
+    footer {
+        height: 125px;
+        font-size: 150%;
+    }
+    header {
+        display: block;
+    }
+    header img {
+        min-width: 220px;
+        margin: 0 auto;
+    }
+    
 }
 
