@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Welcome to Balance Point Massage!</title>
-    <link rel="stylesheet" href="/Assets/ResponsiveNavbarMenu/responsivemenu.css">
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-    <script src="/Assets/ResponsiveNavbarMenu/responsivemenu.js"></script>
     <script src="/Website/js/app.js"></script>
-    <link rel="stylesheet" href="/grid.css">
+    <script src="/Assets/ResponsiveNavbarMenu/responsivemenu.js"></script>
+    <!-- <link rel="stylesheet" href="/grid.css"> -->
+    <link rel="stylesheet" href="/styles.css">
 </head>
 
 
+<!--Begin Body Content-->
 <body> 
+<!--This is the menu, and it should mostly stay the same on every page. However, to show which page is active, add class="active" to the <li> tag. This must be changed for every page. -->
     <div id='cssmenu'>
         <ul>
-            <li class="active"><a href='/index.html'><span>Home</span></a></li>
+            <li><a href='/index.html'><span>Home</span></a></li>
 
             <li class='has-sub'><a href='/aboutus/'><span>About Us</span></a>
                 <ul>
@@ -23,13 +25,13 @@
                     <li><a href='/aboutus/ourphilosophy.html'><span>Our Philosophy</span></a>
                     </li>
                     <!--
-                     This would add a submenu to the submenu. class="has-sub" adds the circular arrow icon which indicates there is a further sub menu
-                             <li class='has-sub'><a href='#'><span>Product 2</span></a>
+                        This would add a submenu to the submenu. class="has-sub" adds the circular arrow icon which indicates there is a further sub menu
+                                <li class='has-sub'><a href='#'><span>Product 2</span></a>
                                 <ul>
-                                   <li><a href='#'><span>Sub Product</span></a></li>
-                                   <li class='last'><a href='#'><span>Sub Product</span></a></li>
+                                    <li><a href='#'><span>Sub Product</span></a></li>
+                                    <li class='last'><a href='#'><span>Sub Product</span></a></li>
                                 </ul>
-                             </li>
+                                </li>
                     -->
                 </ul>
             </li>
@@ -43,7 +45,7 @@
                 </ul>
             </li>
 
-            <li class="has-sub"><a href='/whatweoffer/'><span>What We Offer</span></a>
+            <li class="has-sub active"><a href='/whatweoffer/'><span>What We Offer</span></a>
                 <ul>
                     <li><a href='/whatweoffer/massagetypes.html'><span>Massage Types</span></a></li>        
                     <li><a href='/whatweoffer/acupuncture.html'><span>Acupuncture</span></a></li>
@@ -60,19 +62,22 @@
 </header>
 -->
     
+<div class="fullscreen-video-wrap">
+    <video src="/Website/video/Water%20Drop-H264%2075.mov" autoplay="true" loop="true"></video>
+</div>
 <!--Begin Main Content Area. The size of each section must be changed in the style tag at the top of this page.-->
 <div id=maincontainer>
     <main>
-        <section style="grid-row: 1 / 2; grid-column: 1 / 13;">
+        <section>
         <header class="v-header container">
-        <div class="fullscreen-video-wrap">
-            <video src="/Website/video/Water%20Drop-H264%2075.mov" autoplay="true" loop="true"></video>
-        </div>
         <div class="header-overlay"></div>
         <div class="header-content">
             <img src="Assets/Images/logo%20files/new%20logo%20images/websitelogowbigtext.png" alt="">
             <h1>Discover Professional Massage<br>in a Healing Environment</h1>
-            <a href="#" class="btn">Book Appointment</a>
+            <p>
+                Call To Book An Appointment Now!<br>
+                <a class="tel" href="tel:619 220-5997">(619) 220-5997</a>
+            </p>
             <!--
             <a href="#" class="btn">Learn More</a>
             <a href="#" class="btn">Book Appointment</a>

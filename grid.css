@@ -17,10 +17,10 @@
     width: 100%;
     overflow: none;
 }
-body > ul > li {
+/* body > ul > li {
     display: block;
-    overflow: hidden;
-}
+    /* overflow: hidden; */
+} */
 .gridTextContainer {
     width: 90%;
     height: 90%;
@@ -120,6 +120,4 @@ body{
     grid-template-columns: repeat(4, 1fr);
 
   }
-}
- 
 }

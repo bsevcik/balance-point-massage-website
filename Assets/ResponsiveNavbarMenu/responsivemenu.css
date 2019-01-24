@@ -54,7 +54,10 @@ main {
     display: block;
     margin: 0 auto;
 }
-
+a.tel:link, a.tel:visited {
+    color: white;
+    text-decoration: none;
+}
 
 /*SS classes are used for the FAQ style menus*/
 #ss_menu { 
@@ -92,7 +95,10 @@ main {
 }
 /*End FAQ style Menus*/
 
-
+/* Start home page styling */
+div.fullscreen-video-wrap > video {
+    width: 100%;
+}
 
 .footerHeight {
     height: 100px;
