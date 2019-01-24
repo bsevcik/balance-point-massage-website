@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <style>
+    main > * {
+        background: silver;
+    }
+   	main {
+        display: grid;
+        width: 960px;
+        height: 600px;
+        grid-template-columns: 200px 1fr 1fr;
+        grid-template-rows: 80px 1fr 1fr 100px;
+        grid-gap: 20px;
+        grid-template-areas:
+            "header header header"
+            "nav section-1 section-1"
+            "nav section-2 section-3"
+            "footer footer footer";
+        margin: 20px auto;
+    }
+    header 					{grid-area: header;}
+    nav 					{grid-area: nav;}
+    section:nth-of-type(1) 	{grid-area: section-1;}
+    section:nth-of-type(2) 	{grid-area: section-2;}
+    section:nth-of-type(3) 	{grid-area: section-3;}
+    footer 					{grid-area: footer;}
+    </style>
+</head>
+<body>
+
+<main>
+    <header>Header</header>
+    <nav>Navigation</nav>
+    <section><div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=balance%20point%20massage%20san%20diego&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div></div></section>
+    <section id="content">
+			<form action="" method="post">
+                <h3>Have a question, comment or request?<br>Use the form below to contact us.</h3>
+                <p><em>Note: Fields highlighted in red are required.</em></p>
+                <label>Title:</label>
+                <select name="title">
+                    <option value="Miss">Miss</option>
+                    <option value="Ms">Ms</option>
+                    <option value="Mrs">Mrs</option>
+                    <option value="Mr">Mr</option>
+                    <option value="Dr">Dr</option>
+                </select>
+                <hr>
+                <label>First Name:</label> <input type="text" name="name" maxlength="30" required>
+                <hr>
+                <label>Last Name:</label> <input type="text" name="companyname" maxlength="30" required>
+                <hr>
+                <label>Phone Number:</label> <input type="tel" name="phonenumber" maxlength="20" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required title="Ex: 555-555-5555">
+                <hr>
+                <label>Email:</label> <input type="email" name="email" maxlength="30" required>
+                <hr>
+                <label style="height:100px;">Area of Interest:</label><br>
+                <input type="checkbox" name="product" id="massage" value="vProspect"> Massage<br>
+                <input type="checkbox" name="product" id="corporate" value="vProspect"> Corporate Massage<br>
+                <input type="checkbox" name="product" id="vconvert" value="vConvert"> Acupuncture<br>
+                <input type="checkbox" name="product" id="career" value="vRetain"> Career at Balance Point
+                <hr>
+                <label style="height:100px;">Current Concerns:</label> <br>
+                <input type="radio" name="infrastructure" value="Mac"> Injury<br>
+                <input type="radio" name="infrastructure" value="Linux"> Chronic Pain<br>
+                <input type="radio" name="infrastructure" value="Unix"> Stress<br>
+                <input type="radio" name="infrastructure" value="Windows"> Other
+                <hr>
+                <label>How did you hear about us?</label>
+                <select name="hearaboutus" style="height:100px;" multiple>
+                    <option value="Radio Ad">Radio Ad</option>
+                    <option value="Television Ad">Television Ad</option>
+                    <option value="Magazine Ad">Magazine Ad</option>
+                    <option value="Internet Search">Internet Search</option>
+                    <option value="Word of Mouth">Word of Mouth</option>
+                    <option value="Other">Other</option>
+                </select>
+                <hr>
+                <label>Questions/Comments?</label> <textarea name="questions"></textarea>
+                <hr><br>
+                <fieldset>
+                <legend>Would you like to receive our newsletter?</legend>
+                <input type="radio" id="yes"><label for="yes">Yes</label>
+                <input type="radio" id="no"><label for="no">No</label>
+                </fieldset>
+                <hr>
+                <input type="submit" value="Submit Form">
+            </form>
+		</section>
+    <section>Section-3</section>
+    </main>
+   <br>
+    <footer>
+        <hr>
+        <h3>
+           This Site is made for educational purposes only and has no relation to Balance Point Massage San Diego.
+        </h3>  
+        <ul>
+            <li>
+                <a href="https://www.yelp.com/biz/balance-point-massage-and-bodywork-san-diego"><img src="/Assets/Footer/Yelp_trademark_RGB.png" height="50px">
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.facebook.com/Balance-Point-Massage-552187881506266/"><img src="/Assets/Footer/flogo_RGB_HEX-72.svg" height="40px"></a>
+            </li>
+        </ul>
+
+    </footer>
+    </body>
+</html>
