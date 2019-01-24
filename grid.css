@@ -1,4 +1,4 @@
-.grid {
+/*.grid {
     display: grid;
     grid-gap: 0;
     grid-template-columns: 50% 50%;
@@ -30,7 +30,7 @@ body > ul > li {
     width: 90%;
 }
 
-
+*/
 *{
     box-shadow: border-box;
     font-family: ‘Abel’, sans-serif;
@@ -85,6 +85,7 @@ body{
     z-index: 2;
     align-items: center;
     margin: 0 auto;
+
 }
 .header-content img{
     height: 20%;
@@ -92,13 +93,22 @@ body{
     margin:0 auto;;    
 }
 .header-content h1{
-    font-size: 20px;
+    font-size: 35px;
     margin-bottom: 20%;
 }
-
+.modal-btn{
+    margin: 20px;
+    padding: 10px 30px;
+    background-color: #FEDCD2;
+    color:#4c5654;
+    border: solid 1px #FEDCD2;
+    font-size: 80%;
+    cursor: pointer;
+}
+/*
 .gridContainWidth {
     width: 90%;
-/*    min-height: 1000px;*/
+/*    min-height: 1000px;*/ /*
 }
 @media( min-width: 480px ) {
   .grid {
@@ -122,4 +132,4 @@ body{
   }
 }
  
-}
+}*/
