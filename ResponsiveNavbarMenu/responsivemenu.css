@@ -489,3 +489,9 @@ footer li {
     
 }
 
+/* Print styles go here */
+@media print { 
+ #header, #footer, #nav #img { display: none !important; }
+ background{
+            display: none;}
+}
