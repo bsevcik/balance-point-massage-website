@@ -62,7 +62,7 @@ img.room-active{
 .team-section{
     overflow: hidden;
     text-align: center;
-    background: #DCB239;
+    background: #e7dbcc;
     padding: 60px;
 }
 .team-section h1{
@@ -76,7 +76,7 @@ img.room-active{
     margin: auto;
     width: 160px;
     height: 3px;
-    background: #fff7b8;
+    background: #ffffcc;
     margin-bottom: 40px;
 }
 .ps{
