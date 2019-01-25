@@ -47,7 +47,7 @@ body{
     overflow-x: hidden;
 }
 .v-header{
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     color: #fff;
@@ -80,6 +80,9 @@ body{
     background: #BFD8D2;
     z-index: 1;
     opacity: 0.65;
+}
+#cssmenu > ul > li > ul {
+    z-index: 5;
 }
 .header-content{
     z-index: 2;
